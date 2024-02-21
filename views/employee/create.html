@@ -1,0 +1,24 @@
+<section class="relative p-3 container">
+    <h4 class="text-center mb-3">{{title}}</h4>
+
+    <div class="row justify-content-center align-items-center">
+        <form action="/employee" method="POST">
+            <div class="form-group">
+                <label for="id">Employee ID</label>
+                <input name="id" type="number" min="0" class="form-control" required />
+            </div>
+
+            <div class="form-group">
+                <label for="name">Employee Name</label>
+                <input name="name" type="text" class="form-control" required />
+            </div>
+
+            <div class="form-group">
+                <label for="city">Employee City</label>
+                <input name="city" type="text" class="form-control" required />
+            </div>
+
+            <button type="submit" class="btn btn-success">Submit</button>
+        </form>
+    </div>
+</section>

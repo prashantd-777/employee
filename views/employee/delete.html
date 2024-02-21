@@ -1,0 +1,14 @@
+<section class="relative p-3 container">
+    <h2 class="text-center mb-3">{{title}}</h2>
+
+    <div class="card p-4">
+        <h5>Are you sure, You want to delete this record?</h5>
+        <p>Employee ID: {{employee.id}}</p>
+        <p>Employee Name: {{employee.name}}</p>
+        <p>Employee City: {{employee.city}}</p>
+        <div>
+            <a class="btn btn-danger mx-2" href="/employee/delete-confirm/{{employee.id}}">Delete</a>
+            <a class="btn btn-primary mx-2" href="/employee">Back to Employee</a>
+        </div>
+    </div>
+</section>
